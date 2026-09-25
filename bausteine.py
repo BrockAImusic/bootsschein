@@ -37,6 +37,7 @@ VORLAGE = """<!doctype html>
 <footer>
   <a href="index.html">Support</a><a href="datenschutz.html">Datenschutz</a>
   <a href="agb.html">Nutzungsbedingungen</a><a href="impressum.html">Impressum</a>
+  <a href="https://www.brockdesign.de/apps/bootsschein">Mehr zur App</a>
   <p>Stand: {stand}</p>
 </footer>
 </div></body></html>
@@ -114,7 +115,7 @@ App, sind sie vollständig weg.</p>
 
 <h2>Anonyme Nutzungsstatistik</h2>
 <p>Zur Verbesserung der App wird TelemetryDeck eingesetzt (TelemetryDeck GmbH,
-Bahnhofstraße 3, 82269 Geltendorf, Deutschland). Erfasst werden ausschließlich
+Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Erfasst werden ausschließlich
 anonyme Ereignisse:</p>
 <ul>
   <li>welcher Schein beim ersten Start gewählt wurde (See, Binnen oder beides),</li>
