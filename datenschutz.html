@@ -29,23 +29,40 @@ App, sind sie vollständig weg.</p>
 
 <h2>Anonyme Nutzungsstatistik</h2>
 <p>Zur Verbesserung der App wird TelemetryDeck eingesetzt (TelemetryDeck GmbH,
-Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Erfasst werden ausschließlich
-anonyme Ereignisse:</p>
+Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
+<strong>dass</strong> ein Ereignis stattgefunden hat:</p>
 <ul>
   <li>welcher Schein beim ersten Start gewählt wurde (See, Binnen oder beides),</li>
   <li>dass ein Bogen gestartet, abgegeben oder abgebrochen wurde,</li>
   <li>ob ein Bogen bestanden wurde (ja/nein, nie die Punktzahl),</li>
   <li>dass der Fehlerspeicher zum Lernen geöffnet wurde,</li>
-  <li>dass ein Kaufhinweis erschienen ist,</li>
-  <li>App-Version, iOS-Version und Gerätemodell.</li>
+  <li>dass die Kaufseite geöffnet wurde, von welcher Stelle der App aus
+    (gesperrter Bogen oder Hinweiskarte) und für welchen Bereich,</li>
+  <li>dass ein Kauf abgeschlossen wurde. Dabei überträgt das Statistik-Werkzeug
+    die Produktkennung, die Kaufart, das Land deines App-Store-Kontos, die
+    Währung und den Preis. <strong>Zahlungsdaten, Rechnungsdaten und deine
+    Apple-ID werden nicht übertragen</strong> — die Zahlung wickelt
+    ausschließlich Apple ab,</li>
+  <li>dass beim Laden der Preise, beim Kaufen oder beim Wiederherstellen ein
+    Fehler aufgetreten ist, als feste Kennung wie „kauf.kaufen.netz“. Die
+    Fehlermeldung selbst wird nie übertragen,</li>
+  <li>dass diese Statistik ausgeschaltet wurde. Dieser eine Zähler wird im
+    Moment des Ausschaltens gesendet; danach wird nichts mehr gesendet.</li>
 </ul>
+<p>Mit jedem Ereignis gehen technische Rahmendaten mit: App- und iOS-Version,
+Gerätemodell, Sprach- und Regionseinstellung, Zeitzone sowie eine zufällige
+Sitzungskennung.</p>
 <p><strong>Nicht erfasst werden:</strong> deine Punktzahlen, welche Fragen du falsch
 beantwortet hast, dein Prüfungstermin, dein Name, deine E-Mail-Adresse, deine
 IP-Adresse oder dein Standort.</p>
-<p>TelemetryDeck bildet aus Gerätemerkmalen einen Kennwert, der täglich wechselt
-und sich nicht zurückrechnen lässt. Eine Wiedererkennung über den Tag hinaus ist
-damit nicht möglich. Es findet kein Tracking über Apps oder Websites hinweg
-statt, und es werden keine Daten an Werbenetzwerke weitergegeben.</p>
+<p>TelemetryDeck ordnet die Ereignisse einem Gerät über eine pseudonyme Kennung
+zu. Sie entsteht auf dem Gerät als Prüfsumme aus der Gerätekennung, die Apple
+allen Apps eines Anbieters gemeinsam zuteilt, und lässt sich nicht auf dein
+Gerät zurückrechnen. Sie bleibt gleich, solange auf dem Gerät eine unserer Apps
+installiert ist, und ist bei allen unseren Apps auf demselben Gerät dieselbe.
+Mit Daten anderer Unternehmen wird sie nicht verknüpft. Es wird keine
+Werbe-Kennung verwendet, kein Profil über dich gebildet, und es werden keine
+Daten an Werbenetzwerke weitergegeben oder verkauft.</p>
 <p>Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe f DSGVO — das berechtigte
 Interesse an einer funktionierenden, verbesserten App. Du kannst jederzeit
 widersprechen: <strong>Einstellungen → Datenschutz → „Anonyme Statistiken
@@ -61,7 +78,8 @@ nur zur Beantwortung und löschen sie danach.</p>
 <h2>Käufe</h2>
 <p>Käufe innerhalb der App werden vollständig über Apple abgewickelt. Wir
 erhalten weder deine Zahlungsdaten noch deine Apple-ID. Es gilt zusätzlich die
-Datenschutzerklärung von Apple.</p>
+Datenschutzerklärung von Apple. Was die anonyme Nutzungsstatistik zu Käufen
+zählt, steht oben.</p>
 
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
@@ -74,6 +92,6 @@ allerdings auch keine Auskunft erteilen.</p>
   <a href="index.html">Support</a><a href="datenschutz.html">Datenschutz</a>
   <a href="agb.html">Nutzungsbedingungen</a><a href="impressum.html">Impressum</a>
   <a href="https://www.brockdesign.de/apps/bootsschein">Mehr zur App</a>
-  <p>Stand: 3. August 2026</p>
+  <p>Stand: 27. September 2026</p>
 </footer>
 </div></body></html>
