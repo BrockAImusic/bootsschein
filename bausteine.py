@@ -9,7 +9,7 @@ geänderter Rechtstext muss nur an einer Stelle nachgezogen werden.
 import os
 
 HIER = os.path.dirname(os.path.abspath(__file__))
-STAND = "27. September 2026"
+STAND = "1. Oktober 2026"
 
 ANKER = ('<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'
          '<g stroke="#FBF6EC" stroke-width="8" fill="none" stroke-linecap="round" '
@@ -71,23 +71,29 @@ jedem Durchgang neu — sonst würde man sich Positionen merken statt Antworten.
 <p>Ein Bogen hat 7 Basisfragen und 23 spezifische Fragen. Bestanden ist er nur,
 wenn mindestens 5 Basisfragen <em>und</em> mindestens 18 spezifische Fragen richtig
 sind. Beide Hürden zählen getrennt — 27 von 30 richtig können trotzdem
-nicht reichen. Die Auswertung zeigt deshalb zwei Balken statt einer Zahl.</p>
+nicht reichen. Die Auswertung zeigt deshalb jede Hürde für sich. Beim
+Binnen-Schein unter Segel gelten eigene Bögen und Regeln; die App stellt sich
+nach deiner Wahl in den Einstellungen darauf ein.</p>
 
 <h3>Was kostet die App?</h3>
-<p>Der Download ist kostenlos, je Bereich ist der erste Prüfungsbogen frei.
-Die übrigen Bögen schaltest du mit einem einmaligen Kauf frei — kein Abo, keine
-laufenden Kosten. Der Kauf hängt an deiner Apple-ID und lässt sich auf deinen
-Geräten wiederherstellen.</p>
+<p>Der Download ist kostenlos, je Bereich sind die Fragen aus Bogen 1 frei —
+als Bogen und im Themenmodus — dazu eine Prüfungssimulation, bei See die erste
+Navigationsaufgabe. Alle übrigen Fragen, Bögen und Navigationsaufgaben, weitere
+Simulationen und die freie Mischung schaltest du mit einem einmaligen Kauf frei
+— kein Abo, keine laufenden Kosten. Der Kauf hängt an deiner Apple-ID und lässt
+sich auf deinen Geräten wiederherstellen.</p>
 
 <h3>Sind die Navigationsaufgaben dabei?</h3>
-<p>Noch nicht. Version 1 enthält die 15 Prüfungsbögen für See und Binnen. Die
-Navigationsaufgaben für den Sportbootführerschein See kommen in einem späteren
-Update. Für die Prüfung brauchst du sie zusätzlich zum Bogen.</p>
+<p>Ja, alle 15 amtlichen Navigationsaufgaben mit den amtlichen Ergebnissen.
+Gerechnet wird wie in der Prüfung auf der Übungskarte D49 des BSH; die Karte
+ist urheberrechtlich geschützt und nicht in der App, du brauchst sie als
+Papierkarte. Die Navigationsaufgabe gehört nur zum Sportbootführerschein See —
+auch wenn du den Binnen-Schein schon hast. Der Binnen-Schein hat keine.</p>
 
 <h3>Bleiben meine Ergebnisse erhalten?</h3>
-<p>Ja, alles wird auf deinem iPhone gespeichert und überlebt App-Updates.
-Löschst du die App, sind die Daten weg — es gibt bewusst kein Konto und keine
-Übertragung auf unsere Server.</p>
+<p>Ja, alles wird auf deinem Gerät gespeichert und überlebt App-Updates. Es wird
+nicht zwischen iPhone und iPad abgeglichen. Löschst du die App, sind die Daten
+weg — es gibt bewusst kein Konto und keine Übertragung auf unsere Server.</p>
 
 <h3>Ist die App ein amtliches Angebot?</h3>
 <p>Nein. Es handelt sich um eine private Lernhilfe. Sie steht in keiner
@@ -98,7 +104,7 @@ Verbindung zu einer Behörde und ersetzt keine Fahrschule.</p>
 DATENSCHUTZ = """
 <div class="karte">
 <h2>Kurz gesagt</h2>
-<p>Deine Lernergebnisse bleiben auf deinem iPhone. Es gibt kein Benutzerkonto,
+<p>Deine Lernergebnisse bleiben auf deinem Gerät. Es gibt kein Benutzerkonto,
 keine Anmeldung und keine Werbung. Nach außen geht nur eine anonyme
 Nutzungsstatistik, die du in den Einstellungen abschalten kannst.</p>
 </div>
@@ -108,8 +114,9 @@ Nutzungsstatistik, die du in den Einstellungen abschalten kannst.</p>
 <a href="mailto:apple@brockdesign.de">apple@brockdesign.de</a></p>
 
 <h2>Was auf dem Gerät bleibt</h2>
-<p>Alle bearbeiteten Prüfungsbögen, deine Ergebnisse, dein Fehlerspeicher, ein
-eingetragener Prüfungstermin und deine Einstellungen werden ausschließlich lokal
+<p>Alle bearbeiteten Prüfungsbögen, deine Ergebnisse, dein Lernstand, dein
+Fehlerspeicher, deine Werte aus den Navigationsaufgaben, ein eingetragener
+Prüfungstermin und deine Einstellungen werden ausschließlich lokal
 gespeichert. Sie werden nicht übertragen und nicht ausgewertet. Löschst du die
 App, sind sie vollständig weg.</p>
 
@@ -119,11 +126,13 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
 <strong>dass</strong> ein Ereignis stattgefunden hat:</p>
 <ul>
   <li>welcher Schein beim ersten Start gewählt wurde (See, Binnen oder beides),</li>
-  <li>dass ein Bogen gestartet, abgegeben oder abgebrochen wurde,</li>
+  <li>dass ein Bogen gestartet, abgegeben oder abgebrochen wurde — beim Start
+    mit der Art der Prüfung (etwa Binnen unter Segel),</li>
   <li>ob ein Bogen bestanden wurde (ja/nein, nie die Punktzahl),</li>
   <li>dass der Fehlerspeicher zum Lernen geöffnet wurde,</li>
   <li>dass die Kaufseite geöffnet wurde, von welcher Stelle der App aus
-    (gesperrter Bogen oder Hinweiskarte) und für welchen Bereich,</li>
+    (etwa ein gesperrter Bogen, die Prüfungssimulation, die freie Mischung
+    oder die Hinweiskarte) und für welchen Bereich,</li>
   <li>dass ein Kauf abgeschlossen wurde. Dabei überträgt das Statistik-Werkzeug
     die Produktkennung, die Kaufart, das Land deines App-Store-Kontos, die
     Währung und den Preis. <strong>Zahlungsdaten, Rechnungsdaten und deine
@@ -198,11 +207,19 @@ bekannt gemacht im Verkehrsblatt (Stand 1. August 2023); die Zusammensetzung der
 Maßgeblich ist immer die jeweils geltende amtliche Fassung. Wir übernehmen keine
 Gewähr für Vollständigkeit und Aktualität; Fehler bitte über „Fehler melden“
 mitteilen.</p>
+<p>Die Erklärungen unter „Warum?“ sind nicht Teil des amtlichen Katalogs,
+sondern eigene Zusammenfassungen. Jede nennt die Vorschrift, auf die sie sich
+stützt (Kollisionsverhütungsregeln, Seeschifffahrtsstraßen-Ordnung oder
+Binnenschifffahrtsstraßen-Ordnung). Maßgeblich ist allein deren amtlicher
+Wortlaut.</p>
 
 <h2>Käufe</h2>
-<p>Die App ist kostenlos. Je Bereich ist der erste Prüfungsbogen frei nutzbar.
-Die übrigen Bögen lassen sich durch einen einmaligen Kauf freischalten — es gibt
-kein Abonnement und keine laufenden Kosten. Der Kauf ist an deine Apple-ID
+<p>Die App ist kostenlos. Je Bereich sind die Fragen des ersten Prüfungsbogens —
+als Bogen und im Themenmodus — und eine Prüfungssimulation frei nutzbar, bei See
+dazu die erste Navigationsaufgabe. Alle übrigen Fragen, Bögen und
+Navigationsaufgaben, weitere Simulationen und die freie Mischung lassen sich
+durch einen einmaligen Kauf freischalten — es gibt kein Abonnement und keine
+laufenden Kosten. Der Kauf ist an deine Apple-ID
 gebunden und lässt sich auf deinen Geräten wiederherstellen. Erstattungen
 wickelt ausschließlich Apple ab.</p>
 
