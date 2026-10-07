@@ -185,6 +185,109 @@ Da wir keine personenbezogenen Daten speichern, können wir zu deiner Person
 allerdings auch keine Auskunft erteilen.</p>
 """
 
+HINWEIS_ANDROID = """
+<p class="hinweis">Du nutzt Bootsschein auf einem Android-Gerät? Dann gilt die
+<a href="datenschutz-android.html">Datenschutzerklärung der Android-Fassung</a>.</p>
+"""
+
+# Wortgleich mit `RechtAnsicht.kt` der Android-Fassung (BootsscheinAndroid).
+# Unterschiede zur iPhone-Fassung: Google Play statt Apple, die Kennung der
+# Statistik entsteht je Installation, die Android-Datensicherung, die
+# zwischengespeicherte laufende Prüfung, die vollständige Liste der Rahmendaten.
+DATENSCHUTZ_ANDROID = """
+<div class="karte">
+<h2>Kurz gesagt</h2>
+<p>Deine Lernergebnisse bleiben auf deinem Gerät. Es gibt kein Benutzerkonto,
+keine Anmeldung und keine Werbung. Nach außen geht nur eine anonyme
+Nutzungsstatistik, die du in den Einstellungen abschalten kannst.</p>
+<p>Diese Seite gilt für die <strong>Android-Fassung</strong> aus Google Play. Für
+iPhone und iPad gilt die <a href="datenschutz.html">Datenschutzerklärung der
+iOS-Fassung</a>.</p>
+</div>
+
+<h2>Verantwortlich</h2>
+<p>Johann Brockstedt, Burkamp 1, 24220 Flintbek, Deutschland<br>
+<a href="mailto:apple@brockdesign.de">apple@brockdesign.de</a></p>
+
+<h2>Was auf dem Gerät bleibt</h2>
+<p>Alle bearbeiteten Prüfungsbögen, deine Ergebnisse, dein Lernstand, dein
+Fehlerspeicher, deine Werte aus den Navigationsaufgaben, ein eingetragener
+Prüfungstermin und deine Einstellungen werden ausschließlich lokal
+gespeichert — ebenso eine angefangene Prüfung, damit sie weitergeht, falls
+Android die App zwischendurch beendet. Sie werden nicht an uns übertragen und
+nicht ausgewertet.</p>
+<p>Hast du auf deinem Gerät die Datensicherung von Android eingeschaltet,
+sichert Android diese Daten verschlüsselt in deinem eigenen Google-Konto,
+damit sie nach einem Gerätewechsel oder einer Neuinstallation zurückkommen.
+Darauf haben wir keinen Zugriff. Ohne diese Sicherung sind die Daten weg, wenn
+du die App löschst.</p>
+
+<h2>Anonyme Nutzungsstatistik</h2>
+<p>Zur Verbesserung der App wird TelemetryDeck eingesetzt (TelemetryDeck GmbH,
+Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
+<strong>dass</strong> ein Ereignis stattgefunden hat:</p>
+<ul>
+  <li>welcher Schein beim ersten Start gewählt wurde (See, Binnen oder beides),</li>
+  <li>dass ein Bogen gestartet, abgegeben oder abgebrochen wurde — beim Start
+    mit der Art der Prüfung (etwa Binnen unter Segel),</li>
+  <li>ob ein Bogen bestanden wurde (ja/nein, nie die Punktzahl),</li>
+  <li>dass der Fehlerspeicher zum Lernen geöffnet wurde,</li>
+  <li>dass die Kaufseite geöffnet wurde, von welcher Stelle der App aus
+    (etwa ein gesperrter Bogen, die Prüfungssimulation, die freie Mischung
+    oder die Hinweiskarte) und für welchen Bereich,</li>
+  <li>dass ein Kauf abgeschlossen wurde. Dabei überträgt das Statistik-Werkzeug
+    die Produktkennung, die Kaufart, das Land deines Google-Play-Kontos, die
+    Währung und den Preis. <strong>Zahlungsdaten, Rechnungsdaten und dein
+    Google-Konto werden nicht übertragen</strong> — die Zahlung wickelt
+    ausschließlich Google ab,</li>
+  <li>dass beim Laden der Preise, beim Kaufen oder beim Wiederherstellen ein
+    Fehler aufgetreten ist, als feste Kennung wie „kauf.kaufen.netz“. Die
+    Fehlermeldung selbst wird nie übertragen,</li>
+  <li>dass diese Statistik ausgeschaltet wurde. Dieser eine Zähler wird im
+    Moment des Ausschaltens gesendet; danach wird nichts mehr gesendet.</li>
+</ul>
+<p>Mit jedem Ereignis gehen technische Rahmendaten mit: App- und
+Android-Version, Hersteller und Modell des Geräts, Bildschirmgröße, Sprach-
+und Regionseinstellung, Zeitzone, Wochentag und Stunde, Einstellungen der
+Bedienungshilfen (etwa die Schriftgröße) sowie eine zufällige
+Sitzungskennung.</p>
+<p><strong>Nicht erfasst werden:</strong> deine Punktzahlen, welche Fragen du falsch
+beantwortet hast, dein Prüfungstermin, dein Name, deine E-Mail-Adresse, deine
+IP-Adresse oder dein Standort.</p>
+<p>TelemetryDeck ordnet die Ereignisse einem Gerät über eine pseudonyme Kennung
+zu. Sie entsteht beim ersten Start als Zufallswert auf dem Gerät, wird nur als
+Prüfsumme übertragen und lässt sich nicht auf dein Gerät oder dich
+zurückrechnen. Sie bleibt gleich, solange die App installiert ist, und gilt
+nur für diese App. Mit Daten anderer Unternehmen wird sie nicht verknüpft. Es
+wird keine Werbe-ID verwendet, kein Profil über dich gebildet, und es werden
+keine Daten an Werbenetzwerke weitergegeben oder verkauft.</p>
+<p>Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe f DSGVO — das berechtigte
+Interesse an einer funktionierenden, verbesserten App. Du kannst jederzeit
+widersprechen: <strong>Einstellungen → Datenschutz → „Anonyme Statistiken
+senden“ ausschalten</strong>. Danach wird nichts mehr gesendet.</p>
+
+<h2>Wenn du uns schreibst</h2>
+<p>Nutzt du „Verbesserung vorschlagen“ oder „Fehler melden“, öffnet sich dein
+E-Mail-Programm mit einem vorbereiteten Text. Erst wenn du selbst auf Senden
+tippst, gehen deine E-Mail-Adresse und dein Text an uns. Sichtbar im Text stehen
+App-Version, Android-Version und Gerätemodell — sonst nichts. Wir nutzen die
+Angaben nur zur Beantwortung und löschen sie danach.</p>
+
+<h2>Käufe</h2>
+<p>Käufe innerhalb der App werden vollständig über Google Play abgewickelt. Wir
+erhalten weder deine Zahlungsdaten noch die Daten deines Google-Kontos. Es gilt
+zusätzlich die Datenschutzerklärung von Google. Was die anonyme
+Nutzungsstatistik zu Käufen zählt, steht oben.</p>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei
+einer Aufsichtsbehörde zu beschweren. Zuständig ist das Unabhängige
+Landeszentrum für Datenschutz Schleswig-Holstein, Holstenstraße 98, 24103 Kiel.
+Da wir keine personenbezogenen Daten speichern, können wir zu deiner Person
+allerdings auch keine Auskunft erteilen.</p>
+"""
+
 AGB = """
 <div class="karte">
 <h2>Geltungsbereich</h2>
@@ -274,7 +377,13 @@ INHALTE = {
     "index.html": ("Support", "Hilfe, häufige Fragen und Kontakt zur App Bootsschein.", INDEX),
     "datenschutz.html": ("Datenschutz",
                          "Datenschutzerklärung der App Bootsschein — was auf dem Gerät "
-                         "bleibt und was anonym erfasst wird.", DATENSCHUTZ),
+                         "bleibt und was anonym erfasst wird.", DATENSCHUTZ + HINWEIS_ANDROID),
+    # Eigene Seite statt eines Abschnitts: Google Play verlangt eine Adresse,
+    # die genau die Android-Fassung beschreibt. Eigener Stand, damit die
+    # iOS-Seiten ihr Datum behalten.
+    "datenschutz-android.html": ("Datenschutz (Android)",
+                                 "Datenschutzerklärung der Android-Fassung der App Bootsschein.",
+                                 DATENSCHUTZ_ANDROID, "7. Oktober 2026"),
     "agb.html": ("Nutzungsbedingungen",
                  "Nutzungsbedingungen der App Bootsschein.", AGB),
     "impressum.html": ("Impressum", "Impressum und Anbieterkennzeichnung.", IMPRESSUM),
@@ -282,12 +391,13 @@ INHALTE = {
 
 
 def bauen():
-    for datei, (titel, beschreibung, inhalt) in INHALTE.items():
+    for datei, (titel, beschreibung, inhalt, *eigener_stand) in INHALTE.items():
         aktiv = ' aria-current="page"'
         nav = "".join('<a href="%s"%s>%s</a>' % (ziel, aktiv if ziel == datei else "", name)
                       for ziel, name in SEITEN)
+        stand = eigener_stand[0] if eigener_stand else STAND
         seite = VORLAGE.format(titel=titel, beschreibung=beschreibung, anker=ANKER,
-                               navigation=nav, inhalt=inhalt.strip(), stand=STAND)
+                               navigation=nav, inhalt=inhalt.strip(), stand=stand)
         with open(os.path.join(HIER, datei), "w", encoding="utf-8") as f:
             f.write(seite)
         print(f"  {datei}  {len(seite):>6} Zeichen")
