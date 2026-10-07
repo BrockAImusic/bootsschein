@@ -93,7 +93,9 @@ auch wenn du den Binnen-Schein schon hast. Der Binnen-Schein hat keine.</p>
 <h3>Bleiben meine Ergebnisse erhalten?</h3>
 <p>Ja, alles wird auf deinem Gerät gespeichert und überlebt App-Updates. Es wird
 nicht zwischen iPhone und iPad abgeglichen. Löschst du die App, sind die Daten
-weg — es gibt bewusst kein Konto und keine Übertragung auf unsere Server.</p>
+vom Gerät gelöscht (in einer vorher erstellten iCloud- oder Computer-Sicherung
+bleiben sie enthalten) — es gibt bewusst kein Konto und keine Übertragung auf
+unsere Server.</p>
 
 <h3>Ist die App ein amtliches Angebot?</h3>
 <p>Nein. Es handelt sich um eine private Lernhilfe. Sie steht in keiner
@@ -116,9 +118,14 @@ Nutzungsstatistik, die du in den Einstellungen abschalten kannst.</p>
 <h2>Was auf dem Gerät bleibt</h2>
 <p>Alle bearbeiteten Prüfungsbögen, deine Ergebnisse, dein Lernstand, dein
 Fehlerspeicher, deine Werte aus den Navigationsaufgaben, ein eingetragener
-Prüfungstermin und deine Einstellungen werden ausschließlich lokal
-gespeichert. Sie werden nicht übertragen und nicht ausgewertet. Löschst du die
-App, sind sie vollständig weg.</p>
+Prüfungstermin und deine Einstellungen werden ausschließlich auf deinem Gerät
+gespeichert. Sie werden nicht an uns übertragen und nicht ausgewertet.</p>
+<p>Ist auf deinem iPhone oder iPad die iCloud-Sicherung eingeschaltet, sind
+diese Daten in der Sicherung deines Geräts enthalten, die in deinem eigenen
+iCloud-Konto liegt, ebenso in einer Sicherung am Computer. Darauf haben wir
+keinen Zugriff. Löschst du die App, sind die Daten vom Gerät gelöscht; in einer
+vorher erstellten Sicherung bleiben sie, bis diese ersetzt oder gelöscht
+wird.</p>
 
 <h2>Anonyme Nutzungsstatistik</h2>
 <p>Zur Verbesserung der App wird TelemetryDeck eingesetzt (TelemetryDeck GmbH,
@@ -377,7 +384,8 @@ INHALTE = {
     "index.html": ("Support", "Hilfe, häufige Fragen und Kontakt zur App Bootsschein.", INDEX),
     "datenschutz.html": ("Datenschutz",
                          "Datenschutzerklärung der App Bootsschein — was auf dem Gerät "
-                         "bleibt und was anonym erfasst wird.", DATENSCHUTZ + HINWEIS_ANDROID),
+                         "bleibt und was anonym erfasst wird.", DATENSCHUTZ + HINWEIS_ANDROID,
+                         "7. Oktober 2026"),
     # Eigene Seite statt eines Abschnitts: Google Play verlangt eine Adresse,
     # die genau die Android-Fassung beschreibt. Eigener Stand, damit die
     # iOS-Seiten ihr Datum behalten.
