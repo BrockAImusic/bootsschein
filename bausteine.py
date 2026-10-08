@@ -247,9 +247,9 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
     Währung und den Preis. <strong>Zahlungsdaten, Rechnungsdaten und dein
     Google-Konto werden nicht übertragen</strong> — die Zahlung wickelt
     ausschließlich Google ab,</li>
-  <li>dass beim Laden der Preise, beim Kaufen oder beim Wiederherstellen ein
-    Fehler aufgetreten ist, als feste Kennung wie „kauf.kaufen.netz“. Die
-    Fehlermeldung selbst wird nie übertragen,</li>
+  <li>dass beim Laden der Preise, beim Kaufen, beim Bestätigen eines Kaufs oder
+    beim Wiederherstellen ein Fehler aufgetreten ist, als feste Kennung wie
+    „kauf.kaufen.netz“. Die Fehlermeldung selbst wird nie übertragen,</li>
   <li>dass diese Statistik ausgeschaltet wurde. Dieser eine Zähler wird im
     Moment des Ausschaltens gesendet; danach wird nichts mehr gesendet.</li>
 </ul>
@@ -285,6 +285,16 @@ Angaben nur zur Beantwortung und löschen sie danach.</p>
 erhalten weder deine Zahlungsdaten noch die Daten deines Google-Kontos. Es gilt
 zusätzlich die Datenschutzerklärung von Google. Was die anonyme
 Nutzungsstatistik zu Käufen zählt, steht oben.</p>
+
+<h2>Hinweis auf neue Versionen</h2>
+<p>Um dir zu zeigen, dass bei Google Play eine neuere Version von Bootsschein
+bereitsteht, fragt die App die Play-Store-App auf deinem Gerät nach der
+aktuellen Versionsnummer (Schnittstelle „In-App Updates“ von Google Play). Die
+Abfrage läuft über die Google-Play-Dienste auf dem Gerät; die App verbindet
+sich dafür mit keinem eigenen Server, und wir erhalten keine Daten. Es gilt die
+Datenschutzerklärung von Google. Rechtsgrundlage ist unser berechtigtes
+Interesse, dich auf Aktualisierungen hinzuweisen (Art. 6 Abs. 1 lit. f
+DSGVO).</p>
 
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
@@ -391,7 +401,7 @@ INHALTE = {
     # iOS-Seiten ihr Datum behalten.
     "datenschutz-android.html": ("Datenschutz (Android)",
                                  "Datenschutzerklärung der Android-Fassung der App Bootsschein.",
-                                 DATENSCHUTZ_ANDROID, "7. Oktober 2026"),
+                                 DATENSCHUTZ_ANDROID, "8. Oktober 2026"),
     "agb.html": ("Nutzungsbedingungen",
                  "Nutzungsbedingungen der App Bootsschein.", AGB),
     "impressum.html": ("Impressum", "Impressum und Anbieterkennzeichnung.", IMPRESSUM),
