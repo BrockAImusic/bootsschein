@@ -361,11 +361,8 @@ Prüfungsinhalte sind davon nicht erfasst.</p>
 
 <h2>Schlussbestimmungen</h2>
 <p>Es gilt deutsches Recht. Sollte eine Bestimmung unwirksam sein, bleibt der
-Rest wirksam. Die Europäische Kommission stellt eine Plattform zur
-Online-Streitbeilegung bereit
-(<a href="https://ec.europa.eu/consumers/odr">ec.europa.eu/consumers/odr</a>);
-wir sind weder verpflichtet noch bereit, an einem Streitbeilegungsverfahren vor
-einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+Rest wirksam. Wir sind weder verpflichtet noch bereit, an einem
+Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 """
 
 IMPRESSUM = """
