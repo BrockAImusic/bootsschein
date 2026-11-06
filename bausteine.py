@@ -137,6 +137,8 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
     mit der Art der Prüfung (etwa Binnen unter Segel),</li>
   <li>ob ein Bogen bestanden wurde (ja/nein, nie die Punktzahl),</li>
   <li>dass der Fehlerspeicher zum Lernen geöffnet wurde,</li>
+  <li>dass eine Lernrunde nach Lernstand gestartet wurde, mit ihrer Art
+    (Weiterlernen, Trotzdem üben oder eine Stufe) und dem Bereich,</li>
   <li>dass die Kaufseite geöffnet wurde, von welcher Stelle der App aus
     (etwa ein gesperrter Bogen, die Prüfungssimulation, die freie Mischung
     oder die Hinweiskarte) und für welchen Bereich,</li>
