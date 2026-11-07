@@ -108,7 +108,7 @@ DATENSCHUTZ = """
 <h2>Kurz gesagt</h2>
 <p>Deine Lernergebnisse bleiben auf deinem Gerät. Es gibt kein Benutzerkonto,
 keine Anmeldung und keine Werbung. Nach außen geht nur eine anonyme
-Nutzungsstatistik, die du in den Einstellungen abschalten kannst.</p>
+Nutzungsstatistik, die du abschalten kannst.</p>
 </div>
 
 <h2>Verantwortlich</h2>
@@ -142,6 +142,9 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
   <li>dass die Kaufseite geöffnet wurde, von welcher Stelle der App aus
     (etwa ein gesperrter Bogen, die Prüfungssimulation, die freie Mischung
     oder die Hinweiskarte) und für welchen Bereich,</li>
+  <li>dass auf „Kaufen“ getippt wurde, wie der Kaufdialog von Apple ausging
+    (gekauft, abgebrochen, ausstehend oder Fehler) und dass die Kaufseite ohne
+    Kauf wieder geschlossen wurde,</li>
   <li>dass ein Kauf abgeschlossen wurde. Dabei überträgt das Statistik-Werkzeug
     die Produktkennung, die Kaufart, das Land deines App-Store-Kontos, die
     Währung und den Preis. <strong>Zahlungsdaten, Rechnungsdaten und deine
@@ -151,7 +154,7 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
     Fehler aufgetreten ist, als feste Kennung wie „kauf.kaufen.netz“. Die
     Fehlermeldung selbst wird nie übertragen,</li>
   <li>dass diese Statistik ausgeschaltet wurde. Dieser eine Zähler wird im
-    Moment des Ausschaltens gesendet; danach wird nichts mehr gesendet.</li>
+    Moment des Ausschaltens gesendet, danach nichts mehr.</li>
 </ul>
 <p>Mit jedem Ereignis gehen technische Rahmendaten mit: App- und iOS-Version,
 Gerätemodell, Sprach- und Regionseinstellung, Zeitzone sowie eine zufällige
@@ -168,9 +171,19 @@ Mit Daten anderer Unternehmen wird sie nicht verknüpft. Es wird keine
 Werbe-Kennung verwendet, kein Profil über dich gebildet, und es werden keine
 Daten an Werbenetzwerke weitergegeben oder verkauft.</p>
 <p>Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe f DSGVO — das berechtigte
-Interesse an einer funktionierenden, verbesserten App. Du kannst jederzeit
-widersprechen: <strong>Einstellungen → Datenschutz → „Anonyme Statistiken
-senden“ ausschalten</strong>. Danach wird nichts mehr gesendet.</p>
+Interesse an einer funktionierenden, verbesserten App. Du kannst der Erfassung
+jederzeit widersprechen: In der App unter <strong>Einstellungen → „Datenschutz
+und Impressum“ → Datenschutz ganz unten „Anonyme Statistiken senden“
+ausschalten</strong>. Danach wird nichts mehr gesendet.</p>
+
+<h2>Hinweis auf neue Versionen</h2>
+<p>Um dir zu zeigen, dass im App Store eine neuere Version von Bootsschein
+bereitsteht, fragt die App höchstens alle sechs Stunden bei Apple die aktuelle
+Versionsnummer ab (itunes.apple.com). Übermittelt werden nur die Kennung der
+App und das Land deiner Regionseinstellung; wie bei jeder Internetverbindung
+erhält Apple dabei deine IP-Adresse. Wir selbst erhalten keine Daten.
+Rechtsgrundlage ist unser berechtigtes Interesse, dich auf Aktualisierungen
+hinzuweisen (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
 <h2>Wenn du uns schreibst</h2>
 <p>Nutzt du „Verbesserung vorschlagen“ oder „Fehler melden“, öffnet sich dein
@@ -208,7 +221,7 @@ DATENSCHUTZ_ANDROID = """
 <h2>Kurz gesagt</h2>
 <p>Deine Lernergebnisse bleiben auf deinem Gerät. Es gibt kein Benutzerkonto,
 keine Anmeldung und keine Werbung. Nach außen geht nur eine anonyme
-Nutzungsstatistik, die du in den Einstellungen abschalten kannst.</p>
+Nutzungsstatistik, die du abschalten kannst.</p>
 <p>Diese Seite gilt für die <strong>Android-Fassung</strong> aus Google Play. Für
 iPhone und iPad gilt die <a href="datenschutz.html">Datenschutzerklärung der
 iOS-Fassung</a>.</p>
@@ -244,6 +257,9 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
   <li>dass die Kaufseite geöffnet wurde, von welcher Stelle der App aus
     (etwa ein gesperrter Bogen, die Prüfungssimulation, die freie Mischung
     oder die Hinweiskarte) und für welchen Bereich,</li>
+  <li>dass auf „Kaufen“ getippt wurde, wie der Kaufdialog von Google ausging
+    (gekauft, abgebrochen, ausstehend oder Fehler) und dass die Kaufseite ohne
+    Kauf wieder geschlossen wurde,</li>
   <li>dass ein Kauf abgeschlossen wurde. Dabei überträgt das Statistik-Werkzeug
     die Produktkennung, die Kaufart, das Land deines Google-Play-Kontos, die
     Währung und den Preis. <strong>Zahlungsdaten, Rechnungsdaten und dein
@@ -253,7 +269,7 @@ Von-der-Tann-Str. 54, 86159 Augsburg, Deutschland). Übertragen wird nur,
     beim Wiederherstellen ein Fehler aufgetreten ist, als feste Kennung wie
     „kauf.kaufen.netz“. Die Fehlermeldung selbst wird nie übertragen,</li>
   <li>dass diese Statistik ausgeschaltet wurde. Dieser eine Zähler wird im
-    Moment des Ausschaltens gesendet; danach wird nichts mehr gesendet.</li>
+    Moment des Ausschaltens gesendet, danach nichts mehr.</li>
 </ul>
 <p>Mit jedem Ereignis gehen technische Rahmendaten mit: App- und
 Android-Version, Hersteller und Modell des Geräts, Bildschirmgröße, Sprach-
@@ -271,9 +287,10 @@ nur für diese App. Mit Daten anderer Unternehmen wird sie nicht verknüpft. Es
 wird keine Werbe-ID verwendet, kein Profil über dich gebildet, und es werden
 keine Daten an Werbenetzwerke weitergegeben oder verkauft.</p>
 <p>Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe f DSGVO — das berechtigte
-Interesse an einer funktionierenden, verbesserten App. Du kannst jederzeit
-widersprechen: <strong>Einstellungen → Datenschutz → „Anonyme Statistiken
-senden“ ausschalten</strong>. Danach wird nichts mehr gesendet.</p>
+Interesse an einer funktionierenden, verbesserten App. Du kannst der Erfassung
+jederzeit widersprechen: In der App unter <strong>Einstellungen → „Datenschutz
+und Impressum“ → Datenschutz ganz unten „Anonyme Statistiken senden“
+ausschalten</strong>. Danach wird nichts mehr gesendet.</p>
 
 <h2>Wenn du uns schreibst</h2>
 <p>Nutzt du „Verbesserung vorschlagen“ oder „Fehler melden“, öffnet sich dein
@@ -394,13 +411,13 @@ INHALTE = {
     "datenschutz.html": ("Datenschutz",
                          "Datenschutzerklärung der App Bootsschein — was auf dem Gerät "
                          "bleibt und was anonym erfasst wird.", DATENSCHUTZ + HINWEIS_ANDROID,
-                         "7. Oktober 2026"),
+                         "7. November 2026"),
     # Eigene Seite statt eines Abschnitts: Google Play verlangt eine Adresse,
     # die genau die Android-Fassung beschreibt. Eigener Stand, damit die
     # iOS-Seiten ihr Datum behalten.
     "datenschutz-android.html": ("Datenschutz (Android)",
                                  "Datenschutzerklärung der Android-Fassung der App Bootsschein.",
-                                 DATENSCHUTZ_ANDROID, "8. Oktober 2026"),
+                                 DATENSCHUTZ_ANDROID, "5. November 2026"),
     "agb.html": ("Nutzungsbedingungen",
                  "Nutzungsbedingungen der App Bootsschein.", AGB),
     "impressum.html": ("Impressum", "Impressum und Anbieterkennzeichnung.", IMPRESSUM),
